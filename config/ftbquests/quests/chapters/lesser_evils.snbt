@@ -1,0 +1,164 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "lesser_evils"
+	group: "6D7A192B0CC378A4"
+	icon: {
+		Count: 1b
+		id: "mutantmonsters:mutant_skeleton_skull"
+		tag: {
+			Damage: 0
+			affix_data: {
+				affixes: {
+					"apotheosis:socket": 0.0f
+				}
+			}
+		}
+	}
+	id: "2FA380C2B515B7A4"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Вооружённый огромным луком, этот мутировавший &7скелет &fпредставляет собой серьёзную угрозу на дальней дистанции."
+				""
+				"Он будет яростно отбрасывать назад любого, кто посмеет подойти на &4расстояние ближнего боя&f."
+			]
+			icon: {
+				Count: 1b
+				id: "mutantmonsters:mutant_skeleton_skull"
+				tag: {
+					Damage: 0
+					affix_data: {
+						affixes: {
+							"apotheosis:socket": 0.0f
+						}
+					}
+				}
+			}
+			id: "31FBA523D6A35AA4"
+			rewards: [
+				{
+					count: 3
+					id: "2DAF8180CC1B5428"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "677B2FD28F83FD33"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:skeleton_gate_large"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Скелет снайпер"
+			tasks: [{
+				entity: "mutantmonsters:mutant_skeleton"
+				icon: {
+					Count: 1b
+					id: "mutantmonsters:mutant_skeleton_skull"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "572A67B5EA3E3EF9"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Победите мутировавшего скелета"
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"Этот мутировавший &aкрипер &fобладает повышенной подвижностью и способен атаковать в ближнем бою."
+				""
+				"При получении смертельного урона он накопит заряд и с силой &4взорвётся&f, оставив после себя яйцо."
+			]
+			id: "46E426066D19DABA"
+			rewards: [
+				{
+					count: 3
+					id: "69D9C42B80884283"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "126F6B40BD21E7FD"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:creeper_gate_large"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Губительный крипер"
+			tasks: [{
+				entity: "mutantmonsters:mutant_creeper"
+				icon: "minecraft:creeper_head"
+				id: "019B895F794DFBF4"
+				type: "kill"
+				value: 3L
+			}]
+			title: "Победите мутировавшего крипера"
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Эта мутировавшая разновидность &2зомби &fпопытается подбросить вас в воздух, после чего быстро вколотит обратно в землю."
+				""
+				"Его необходимо поджечь, иначе он будет &aрегенерировать &fсвоё здоровье."
+			]
+			id: "417CD90BAD812204"
+			rewards: [
+				{
+					count: 3
+					id: "5454557E6A779714"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "14704D0E082FAAA7"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:zombie_gate_large"
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Яростный зомби"
+			tasks: [{
+				entity: "mutantmonsters:mutant_zombie"
+				icon: "minecraft:zombie_head"
+				id: "70B536B5EB9631DA"
+				title: "Победите мутировавшего зомби"
+				type: "kill"
+				value: 3L
+			}]
+			x: -2.0d
+			y: -5.0d
+		}
+	]
+	title: "{\"text\":\"Меньшее зло\",\"color\":\"#DE1278\"}"
+}

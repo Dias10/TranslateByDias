@@ -1,0 +1,151 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "textdark_magickscoloref500c"
+	group: "3B0CDB8395E59365"
+	icon: {
+		Count: 1b
+		id: "apotheosis:gem"
+		tag: {
+			gem: "irons_spellbooks:eldritch"
+			rarity: "ancient"
+		}
+	}
+	id: "39A12A3BBCD69D07"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&aОкружающая магия &fнаполняет этот мир и населяющих его живых существ. На протяжении тысячелетий люди посвящали свои жизни её изучению, разделяя виды маны на отдельные \"школы\"."
+				""
+				"Использование таких популярных школ, как &6огонь&f, &bлёд &fи &eсвет&f, поощряется &dВеликой цитаделью&f, которая надзирает за магическими делами. Однако, хотя применение магии &5Эндера &fи не запрещено полностью, оно осуждается из-за тёмной природы её &9маны&f."
+				""
+				"И хотя школы, на использование которых наложены ограничения, всё ещё широко практикуются в некоторых регионах, существуют две школы магии, которые находятся под абсолютным запретом."
+			]
+			icon: {
+				Count: 1b
+				id: "irons_spellbooks:scroll"
+				tag: {
+					ISB_Spells: {
+						data: [{
+							id: "cataclysm_spellbooks:void_beam"
+							index: 0
+							level: 1
+							locked: 1b
+						}]
+						maxSpells: 1
+						mustEquip: 0b
+						spellWheel: 0b
+					}
+				}
+			}
+			id: "65993F4D40D84B74"
+			rewards: [{
+				count: 2
+				id: "47F62914A8C40E16"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			subtitle: "Темное искусство"
+			tasks: [{
+				id: "56E356D0D75B3442"
+				title: "Нажмите чтобы выполнить."
+				type: "checkmark"
+			}]
+			title: "Запретная магия"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["65993F4D40D84B74"]
+			description: [
+				"Одна из двух запретных школ — &0древняя магия&f. Её &9мана &fисходит от самого &0Тёмного Бога &fкак дар тем, кого он избрал для исполнения своей воли."
+				""
+				"В отличие от других школ, черпающих &9ману &fиз окружающей среды, человек наделяется &0древней &9маной &fлишь после принятия пакта с &0Тёмным Богом&f."
+				""
+				"Для того чтобы начать свой путь, вам предстоит найти фрагменты &8древних знаний&f, чтобы выковать &0древний &8манускрипт&f."
+			]
+			id: "6B0FCE3DEEDB952A"
+			rewards: [{
+				count: 4
+				id: "4EAFA1E0393DF5C7"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+			subtitle: "Подарок Темного Бога"
+			tasks: [{
+				id: "083451D036F6C4CA"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+			title:"Потустороннее искусство"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6B0FCE3DEEDB952A"]
+			description: [
+				"После создания &0древнего &8манускрипта &fпрочтите его, чтобы заключить пакт с &0Тёмным Богом &fи получить случайное &0древнее заклинание&f."
+				""
+				"Вам потребуется раздобыть больше манускриптов, чтобы освоить остальные заклинания."
+			]
+			id: "35648D67DCE2EC41"
+			rewards: [{
+				count: 5
+				id: "13EC70D98FC063EB"
+				item: "irons_spellbooks:ancient_knowledge_fragment"
+				type: "item"
+			}]
+			subtitle: "Пакт Темного Бога"
+			tasks: [{
+				id: "2420DCC54740DADB"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["35648D67DCE2EC41"]
+			description: [
+				"Хотя &0древние &fзаклинания грозны и сами по себе, их силу можно дополнительно увеличить с помощью &dсамоцветов&f."
+				""
+				"Камень Тёмного Бога, будучи вставленным в ваше снаряжение, значительно усилит мощь ваших &0древних заклинаний&f."
+				""
+				"Их можно найти в подземельях или приобрести в &6магазине&f."
+			]
+			icon: {
+				Count: 1b
+				id: "apotheosis:gem"
+				tag: {
+					gem: "irons_spellbooks:eldritch"
+					rarity: "ancient"
+				}
+			}
+			id: "2EF8DE651DF12843"
+			rewards: [{
+				id: "15C33D0AE4ADE279"
+				item: {
+					Count: 1b
+					id: "apotheosis:gem"
+					tag: {
+						gem: "irons_spellbooks:eldritch"
+						rarity: "ancient"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Самоцвет Темного Бога"
+			tasks: [{
+				id: "2DA63504C8AA0921"
+				item: "irons_spellbooks:eldritch_manuscript"
+				type: "item"
+			}]
+			title: "Сила древней магии"
+			x: 4.5d
+			y: 1.0d
+		}
+	]
+	title: "{\"text\":\"Запретная Магия\",\"color\":\"#EF500C\"}"
+}

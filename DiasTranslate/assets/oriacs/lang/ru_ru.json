@@ -1,0 +1,36 @@
+{
+  "item.oriacs.umbrella": "Зонтик",
+  "item.oriacs.diving_helmet": "Водолазный шлем",
+  "item.oriacs.landwalking_helmet": "Шлем для хождения по земле",
+  "item.oriacs.chainmembrane_helmet": "Кольчужно-мембранный шлем",
+  "item.oriacs.chainmembrane_chestplate": "Кольчужно-мембранный нагрудник",
+  "item.oriacs.chainmembrane_leggings": "Кольчужно-мембранные поножи",
+  "item.oriacs.chainmembrane_boots": "Кольчужно-мембранные ботинки",
+
+  "effect.oriacs.water_resistance": "Влагоотталкивание",
+  "item.minecraft.tipped_arrow.effect.water_resistance": "Стрела влагоотталкивания",
+  "item.minecraft.potion.effect.water_resistance": "Зелье влагоотталкивания",
+  "item.minecraft.splash_potion.effect.water_resistance": "Взрывное зелье влагоотталкивания",
+  "item.minecraft.lingering_potion.effect.water_resistance": "Оседающее зелье влагоотталкивания",
+
+  "effect.oriacs.sunlight_resistance": "Солнцезащитный крем",
+  "item.minecraft.tipped_arrow.effect.sunscreen": "Стрела солнцезащитного крема",
+  "item.minecraft.potion.effect.sunscreen": "Зелье солнцезащитного крема",
+  "item.minecraft.splash_potion.effect.sunscreen": "Взрывное зелье солнцезащитного крема",
+  "item.minecraft.lingering_potion.effect.sunscreen": "Оседающее зелье солнцезащитного крема",
+
+  "effect.oriacs.fresh_air": "Свежий воздух",
+
+  "enchantment.oriacs.flying_protection": "Защита в полёте",
+
+  "config.oriacs.server.diet.strict_diet": "Строгая диета",
+  "config.oriacs.server.helmet.diving.transform_time": "Время трансформации водолазного шлема",
+  "config.oriacs.server.helmet.diving.respiration_multiplier": "Множитель дыхания водолазного шлема",
+  "config.oriacs.server.helmet.landwalking.transform_time": "Время трансформации шлема для хождения по земле",
+  "config.oriacs.server.helmet.landwalking.respiration_multiplier": "Множитель дыхания шлема для хождения по земле",
+  "config.oriacs.server.umbrella.max_damage": "Максимальная прочность зонтика",
+  "config.oriacs.server.umbrella.can_keep_out_rain": "Защищает ли зонтик от дождя",
+  "config.oriacs.server.umbrella.can_keep_out_sunlight": "Защищает ли зонтик от солнечного света",
+  "config.oriacs.server.umbrella.max_keep_out_sunlight_color": "Макс. значение R/G/B цвета зонтика для защиты от солнца",
+  "config.oriacs.server.umbrella.spawn_with_zombie_chance": "Шанс появления зомби с зонтиком на сложной сложности"
+}

@@ -1,0 +1,378 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "textciscos_legacycolordark_redboldtrueunderlinedfalse"
+	group: "103C318287AA2A0F"
+	icon: {
+		Count: 1b
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "cisco_mod:supreme_nightfall"
+		tag: {
+			Damage: 0
+			affix_data: {
+				sockets: 1
+			}
+		}
+	}
+	id: "60A5389CE8B10B5A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["134D9801D13D58F5"]
+			description: [
+				"*&4Артас &fприближается к вам с предложением.* &6Cisco &f— всего лишь глупый полукровка, рождённый от &0осквернённой &4крови&f. Взгляни на себя: ты его лучший ученик, созданный по его образу и подобию, но при этом без нужды скованный его цепями."
+				""
+				"Ты и вправду веришь, что сила &6Cisco &fкогда-либо искренне принадлежала тебе? Истинную мощь он оставляет себе, призывая тебя к балансу и сдержанности."
+				""
+				"Но я вижу этот пылающий голод, мерцающий за твоей преданностью. Присоединяйся ко мне, и вместе мы сокрушим этого ложного &6героя&f. Мы не преклоним колени перед &eбогами&f, которые играли им, и не отступим перед наследием, за которое он цепляется."
+				""
+				"Вместе мы заберём ту драгоценную искру божественности, которой он обладает, и будем властвовать над ней так, как посчитаем нужным."
+			]
+			id: "4BDA63A50DFBBDA5"
+			rewards: [{
+				count: 3
+				id: "6AF3FD57DCA20AD1"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cisco_mod:champion_coin"
+				}
+				type: "item"
+			}]
+			subtitle: "Где умирает верность"
+			tasks: [{
+				id: "364EB200D442E031"
+				title: "Нажмите чтобы выполнить"
+				type: "checkmark"
+			}]
+			title: "Путь предательства"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4BDA63A50DFBBDA5"]
+			description: [
+				"Итак, ты предпочёл тени своему несостоявшемуся спасителю... Что ж, хороший выбор."
+				""
+				"Несмотря на все свои недостатки, Cisco — не тот, кого стоит недооценивать. Призвать его с намерением предать, прежде не ослабив, было бы &cроковой ошибкой&f."
+				""
+				"Собери &8губительные осколки &fи &dночной аметист&f, а затем перекуй &4талисман вызова&f, чтобы получить преимущество в бою."
+			]
+			id: "06FA4049EBC45DA2"
+			rewards: [
+				{
+					count: 2
+					id: "79F258BF521C1274"
+					item: "cisco_mod:championlootbag"
+					type: "item"
+				}
+				{
+					id: "4B26B5F9B5775FEB"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Ритуал предательства"
+			tasks: [
+				{
+					id: "148187ABDB18895A"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:fell_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "5EE09AC7CB76C38D"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:fell_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "266F1661B80182EB"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:nocturnal_amethyst"
+					}
+					type: "item"
+				}
+				{
+					id: "75A8B40D2220E62F"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:nocturnal_amethyst"
+					}
+					type: "item"
+				}
+			]
+			title: "Путы предательства"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06FA4049EBC45DA2"]
+			description: [
+				"Момент настал, маленький предатель."
+				""
+				"&eТалисман вызова&f, некогда бывший реликвией, выкованной на доверии и служившей для ваших дружеских дуэлей, теперь доставит твою измену прямо к сердцу &6Cisco&f."
+			]
+			id: "20489A4126AE5804"
+			rewards: [{
+				count: 20
+				id: "4C5CF25F315A8678"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cisco_mod:champion_coin"
+				}
+				type: "item"
+			}]
+			subtitle: "Печать предателя"
+			tasks: [{
+				id: "1A69EEB7109AB42F"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cisco_mod:talisman_of_betrayal"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20489A4126AE5804"]
+			description: [
+				"Призови своего &6старого учителя&f — так называемого &9мудреца&f, который посмел сковать твою истинную силу."
+				""
+				"Он придёт добровольно, веря, что это лишь очередное испытание твоей стойкости. В этот самый миг он почувствует, как его силы угасают. Когда он предстанет перед тобой ослабленным, не колеблись: срази его и забери его &eбожественную искру &fсебе."
+				""
+				"Призови &6его&f. Сразись с &6ним&f. Покончи с &6ним&f."
+			]
+			id: "29854A90DE3D647E"
+			rewards: [
+				{
+					count: 2
+					id: "24ACA58EF6D4ACB4"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:tablet_of_descension"
+					}
+					type: "item"
+				}
+				{
+					id: "6C92AACD2361909F"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+			]
+			subtitle: "Последняя черта"
+			tasks: [{
+				advancement: "cisco_mod:ashesof_allegiance"
+				criterion: ""
+				id: "3286F7A92EEDC7F4"
+				title: "Победите падшего Cisco"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["29854A90DE3D647E"]
+			description: [
+				"&cВысший Закат&f — клинок бесконечных сумерек, рассекающий врагов в бою и защищающий своего хозяина, пока он скрыт."
+				""
+				"Запомни: &cЗакат &fне служит трусам. Рази им смело, ведь если ты предашь его доверие — со временем его лезвие обернётся против тебя."
+				""
+				"Но если ты сможешь насытить его голод… ни один смертный или бог не встанет на твоём пути."
+			]
+			id: "60D7A13216197BB1"
+			rewards: [{
+				count: 5
+				id: "6A67EF78710935F6"
+				item: "cisco_mod:championlootbag"
+				type: "item"
+			}]
+			subtitle: "Нарушенный Баланс"
+			tasks: [{
+				id: "6A34BA78F4CFBC8A"
+				item: {
+					Count: 1b
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cisco_mod:supreme_nightfall"
+					tag: {
+						Damage: 0
+						affix_data: {
+							sockets: 1
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Высший Закат"
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["29854A90DE3D647E"]
+			description: [
+				"Чем больше ты &cисходишь кровью&f, тем тяжелее тебя сломить. Когда &4гибель &fподступит вплотную — стань единым целым с &9бездной&f: неудержимым, неприкосновенным."
+				""
+				"Мощь &8железа и теней &fтеперь принадлежит тебе."
+			]
+			icon: {
+				Count: 1b
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "cisco_mod:descended_hero_chestplate"
+				tag: {
+					Damage: 0
+					affix_data: {
+						sockets: 1
+					}
+				}
+			}
+			id: "663F82C45A362B8D"
+			rewards: [{
+				count: 10
+				id: "263ACDA4C7F12250"
+				item: "cisco_mod:championlootbag"
+				type: "item"
+			}]
+			subtitle: "Воплощение Темного Бога"
+			tasks: [
+				{
+					id: "2EDF8BEAB6B0D0FC"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:descended_hero_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 1
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "446068D66C2F3788"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:descended_hero_chestplate"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 1
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "320CA560C4E84F5F"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:descended_hero_leggings"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 0
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3CDA34CF7DA0FA11"
+					item: {
+						Count: 1b
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cisco_mod:descended_hero_boots"
+						tag: {
+							Damage: 0
+							affix_data: {
+								sockets: 1
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Доспехи Падшего"
+			x: 1.0d
+			y: 5.5d
+		}
+	]
+	title: "{\"text\":\"Пепел верности\",\"color\":\"black\",\"bold\":true,\"underlined\":false}"
+}

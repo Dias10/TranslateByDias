@@ -1,0 +1,1543 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "travellers_journey"
+	group: "3B0CDB8395E59365"
+	icon: {
+		Count: 1b
+		id: "irons_spellbooks:wayward_compass"
+		tag: { }
+	}
+	id: "7E3202F22A2F5817"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Этот полезный инструмент поможет вам отыскать любой биом, какой пожелаете."]
+			icon: {
+				Count: 1b
+				id: "naturescompass:naturescompass"
+				tag: { }
+			}
+			id: "7815C719227C80E6"
+			rewards: [
+				{
+					id: "0E4876D1DB6F2FAE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "06FE0D3A105EA1D3"
+					item: "skilltree:wisdom_scroll"
+					type: "item"
+				}
+			]
+			shape: "octagon"
+			size: 3.0d
+			subtitle: "Поиск горизонтов"
+			tasks: [{
+				id: "7F8DAC298AD11A0B"
+				item: {
+					Count: 1b
+					id: "naturescompass:naturescompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			description: ["Этот портал можно создать с помощью цветов и земли, и он перенесёт вас в Сумеречный лес."]
+			icon: "twilightforest:twilight_portal_miniature_structure"
+			id: "0409EE265B906649"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0EE2F4ECB6D1990D"
+					table_id: 2009222526436419355L
+					type: "choice"
+				}
+				{
+					id: "18C3DFEF1AB6FE29"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			size: 2.0d
+			subtitle: "Путешествие в Сумеречный лес"
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				id: "700FF3396A1EF734"
+				type: "dimension"
+			}]
+			title: "Посетите Сумеречный лес"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			description: ["Отыщите дом привратника, чтобы начать это путешествие."]
+			icon: "blue_skies:everbright_portal"
+			id: "2C8C284AB1700A88"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EAA3216BBA1051F"
+					table_id: 2009222526436419355L
+					type: "choice"
+				}
+				{
+					id: "0F2FD6FA9E9A9F8E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Ослепительный мир"
+			tasks: [{
+				dimension: "blue_skies:everbright"
+				id: "06BD38EB7F6E3015"
+				type: "dimension"
+			}]
+			title: "Дойдите до Эвербрайта"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			icon: "blue_skies:everdawn_portal"
+			id: "0FD876EB3D9B14F9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0555AEB361DF20CD"
+					table_id: 2009222526436419355L
+					type: "choice"
+				}
+				{
+					id: "7B5E77CBE69123B9"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "rsquare"
+			size: 2.0d
+			subtitle: "Багровые небеса"
+			tasks: [{
+				dimension: "blue_skies:everdawn"
+				id: "7CB079893D972ABC"
+				type: "dimension"
+			}]
+			title: "Дойдите до Эвердона"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти во Дворе Наги."]
+			id: "3BD706C24344CD30"
+			rewards: [
+				{
+					id: "027ACC0880A242B1"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "70A1B6A34591819A"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "23BA837C3C12EFF5"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "601281772C76D610"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Нага повержена!"
+			tasks: [{
+				id: "1EFDF1A804BF05E3"
+				item: "twilightforest:naga_trophy"
+				title: "Acquire Naga's Head"
+				type: "item"
+			}]
+			title: "Убейте Нагу"
+			x: 0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти в башне Лича."]
+			id: "008B7E891A9C410E"
+			rewards: [
+				{
+					id: "53A00414ACC14B20"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "69554582EFAE8F84"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "632A913F59987514"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "2606617D95091EC0"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Удар по бессмертию"
+			tasks: [{
+				id: "36B93C19A6756617"
+				item: "twilightforest:lich_trophy"
+				title: "Acquire Lich's Head"
+				type: "item"
+			}]
+			title: "Убейте Лича"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти на нижнем уровне лабиринта."]
+			id: "5BA1AE423D7C3C4A"
+			rewards: [
+				{
+					id: "3B81A98DFA94C6FE"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5251E3EE1E07005F"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61173824167FBEAD"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "1AC2C157A2927C3E"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Конец подземного ужаса"
+			tasks: [{
+				id: "6EC2E4FA76F2EAAB"
+				item: "twilightforest:minoshroom_trophy"
+				title: "Acquire Minoshroom's Head"
+				type: "item"
+			}]
+			title: "Убейте Грибного Минотавра"
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти в её логове посреди Огненного болота."]
+			id: "5A7F819BCFDB9CBF"
+			rewards: [
+				{
+					id: "7AD1A60F6D771225"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1E7BC61B09022EF6"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "17E73C82848D3AFE"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "6985AFA17D1E5D19"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Обезглавливание Гидры"
+			tasks: [{
+				id: "7B3BB21C989EBE35"
+				item: "twilightforest:hydra_trophy"
+				title: "Acquire the Hydra's Head"
+				type: "item"
+			}]
+			title: "Убейте Гидру"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти в большом зале внутри Подземной крепости."]
+			id: "215073B10639703F"
+			rewards: [
+				{
+					id: "06A299FC3FBAF473"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "557D39E06F24ADD5"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "5CBD60950B59D608"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "70177C4DD7850FEF"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Расколотые доспехи"
+			tasks: [{
+				id: "175A7BABC26889D1"
+				item: "twilightforest:knight_phantom_trophy"
+				title: "Acquire Knight Phantom's Head"
+				type: "item"
+			}]
+			title: "Убейте Рыцаря фантома"
+			x: 1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти на самой вершине Тёмной башни."]
+			id: "50D2E142736F982F"
+			rewards: [
+				{
+					id: "41C93312EEE98B85"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "2FA300C81EE59143"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "0BD0D19BCA21C45D"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "2AA3030F4A3C7032"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Убийца Гастов"
+			tasks: [{
+				id: "65497C7CC8D28BD1"
+				item: "twilightforest:ur_ghast_trophy"
+				title: "Acquire the Ur-Ghast's Head"
+				type: "item"
+			}]
+			title: "Убейте Высшего Гаста"
+			x: 1.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти в его логове посреди Снежного леса."]
+			id: "6799E933C08DA23D"
+			rewards: [
+				{
+					id: "36BF5BA8AE758C0A"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "21C0A3525A53E864"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "66BB32305FF7BCA3"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "1594D2910A5FC9BC"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Снежный Троль"
+			tasks: [{
+				id: "4D50EBCCBE2C50B3"
+				item: "twilightforest:alpha_yeti_trophy"
+				title: "Добудьте голову Альфа-Йети"
+				type: "item"
+			}]
+			title: "Убейте Альфа-Йети"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти на самой вершине Дворца Авроры."]
+			id: "1F2D9615BA7CE672"
+			rewards: [
+				{
+					id: "1AE0C1EF9D1F561E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "247155F10BE41F61"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "59F42BE38B2AB596"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3F5911EE8108DA15"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Падение ледяного престола"
+			tasks: [{
+				id: "533347E6D81C1141"
+				item: "twilightforest:snow_queen_trophy"
+				title: "Добудьте голову Снежной Королевы"
+				type: "item"
+			}]
+			title: "Убейте Снежную Королеву"
+			x: 1.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0409EE265B906649"]
+			description: ["Можно найти в пещерах троллей, которые встречаются в Нагорье и его окрестностях."]
+			icon: {
+				Count: 1b
+				id: "enemyexpansion:troll_molar"
+				tag: {
+					Damage: 0
+					affix_data: {
+						affixes: {
+							"apotheosis:socket": 0.0f
+						}
+					}
+				}
+			}
+			id: "41BB09EA69DF7D0E"
+			rewards: [
+				{
+					id: "6069B34DA4E4170E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					exclude_from_claim_all: true
+					id: "1F77C8D9011FCAD8"
+					table_id: 1202918963443388018L
+					type: "random"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "57B12A94DD1C0B9A"
+					table_id: 4903156105118211647L
+					type: "random"
+				}
+				{
+					count: 2
+					id: "3D532A672A66B8FE"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Подрубая каменные ноги"
+			tasks: [{
+				entity: "twilightforest:troll"
+				icon: {
+					Count: 1b
+					id: "enemyexpansion:troll_molar"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "4CD47F452CFEE3B5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Пещерного Тролля"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0FD876EB3D9B14F9"]
+			description: ["Вам понадобится 4 &eключа от подземелья, &fчтобы бросить вызов &4боссу."]
+			icon: "blue_skies:polished_brumble_bricks"
+			id: "0B63CA856D44A167"
+			rewards: [
+				{
+					count: 5
+					id: "3D9E183B00615598"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "04D5EA5633CDF90E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Земли Вечного Рассвета"
+			tasks: [{
+				id: "75BCEBCCC0EADD1C"
+				structure: "blue_skies:everdawn_blinding_dungeon"
+				type: "structure"
+			}]
+			title: "Найдите Ослепительное подземелье Вечного Рассвета"
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2C8C284AB1700A88"]
+			description: ["Вам понадобится 4 &eключа от подземелья, &fчтобы бросить вызов &1боссу."]
+			icon: "blue_skies:turquoise_stonebrick"
+			id: "5A1CA2E9519D8682"
+			rewards: [
+				{
+					count: 10
+					id: "14DC969A67C0B7F0"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "0749E1F6C38C803E"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Земли Вечного Сияния"
+			tasks: [{
+				id: "5AFD0181ED493241"
+				structure: "blue_skies:everbright_blinding_dungeon"
+				type: "structure"
+			}]
+			title: "Найдите Ослепительное подземелье Вечного Сияния"
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5A1CA2E9519D8682"]
+			description: ["Сразите Призывателя, правящего в крае Вечного Сияния."]
+			icon: "apotheosis:boss_summoner"
+			id: "1C3CB13AE86F6538"
+			rewards: [
+				{
+					id: "36F3188B1264A5EC"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+				{
+					count: 7
+					id: "317FD17DF5525036"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Убейте Призывателя"
+			tasks: [{
+				entity: "blue_skies:summoner"
+				icon: "apotheosis:boss_summoner"
+				id: "4ABE06C2C50C7334"
+				title: "Убейте Призывателя"
+				type: "kill"
+				value: 1L
+			}]
+			x: -9.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B63CA856D44A167"]
+			description: ["Сразите Алхимика, правящего в крае Вечного Рассвета."]
+			icon: {
+				Count: 1b
+				id: "minecraft:potion"
+				tag: {
+					Potion: "minecraft:invisibility"
+				}
+			}
+			id: "4B89E5EAAB1730F2"
+			rewards: [
+				{
+					id: "1A3333496295957C"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+				{
+					count: 7
+					id: "3675BAA7A040339F"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 2.0d
+			subtitle: "Убейте Алхимика"
+			tasks: [{
+				entity: "blue_skies:alchemist"
+				icon: {
+					Count: 1b
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+				id: "6813D997D6B835C6"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Алхимика"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			description: ["Этот предмет поможет вам найти структуры в вашем мире."]
+			icon: {
+				Count: 1b
+				id: "explorerscompass:explorerscompass"
+				tag: { }
+			}
+			id: "0C7EF344C1930A6F"
+			rewards: [
+				{
+					id: "33B3E5B881706AB7"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 5
+					id: "239E31D96511AFF2"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "1EFF493366A139C2"
+					item: "skilltree:wisdom_scroll"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Поиск ориентиров"
+			tasks: [{
+				id: "1B09D0D9B9CA31FB"
+				item: {
+					Count: 1b
+					id: "explorerscompass:explorerscompass"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Скрафтите компас исследователя"
+			x: 7.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0C7EF344C1930A6F"]
+			description: ["Зачистите эту огромную цитадель и заберите все сокровища."]
+			id: "3C812F7976A9223D"
+			rewards: [
+				{
+					id: "17556B45E42B9266"
+					item: "upgradednetherite_items:wither_upgraded_netherite_totem"
+					type: "item"
+				}
+				{
+					id: "587FE558C0CA7F79"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			subtitle: "Осада цитадели Кайра"
+			tasks: [{
+				id: "4F3AE75A7780D622"
+				structure: "dungeons_arise:keep_kayra"
+				title: "Visit keep kayra"
+				type: "structure"
+			}]
+			title: "Зачистите цитадель Кайра"
+			x: 10.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0C7EF344C1930A6F"]
+			description: ["Зачистите дворец, кишащий монстрами и добычей."]
+			id: "6C2DCE962AC28480"
+			rewards: [
+				{
+					id: "5F5D1E91B90277B3"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					id: "57B9140E80CC0A64"
+					item: "upgradednetherite_items:netherite_totem"
+					type: "item"
+				}
+			]
+			subtitle: "Дворец Шираз"
+			tasks: [{
+				id: "174A2B1CBBD1D8E3"
+				structure: "dungeons_arise:shiraz_palace"
+				type: "structure"
+			}]
+			title: "Зачистите дворец Шираз"
+			x: 7.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["0C7EF344C1930A6F"]
+			description: ["Зачистите этот укреплённый лагерь разбойников."]
+			id: "4B649072887655A1"
+			rewards: [
+				{
+					count: 3
+					id: "3D031C74AFD1E0AD"
+					item: "upgradednetherite_items:netherite_apple"
+					type: "item"
+				}
+				{
+					id: "1CEEC4C5BB8CF001"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Тюремная тоска"
+			tasks: [{
+				id: "7593E8618BAAEEEB"
+				structure: "takesapillage:bastille"
+				type: "structure"
+			}]
+			title: "Зачистите Лагерь"
+			x: 4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["0C7EF344C1930A6F"]
+			description: ["Это массивное подземелье может показаться маленьким на поверхности, но оно скрывает множество этажей, которые становятся сложнее, но и щедрее на награды по мере вашего спуска."]
+			id: "0AC77373513B6CC9"
+			rewards: [
+				{
+					count: 5
+					id: "40DAD303C0288B1E"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "60FFD1B2EDA338E0"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Спускайтесь в подземелье"
+			tasks: [{
+				id: "78A87423D3FC98BF"
+				structure: "dungeoncrawl:dungeon"
+				type: "structure"
+			}]
+			title: "Зачистите подземелье Dungeon Crawl"
+			x: 7.5d
+			y: -2.5d
+		}
+		{
+			description: ["Посетите небесное измерение."]
+			id: "22A1E4BA57D4A830"
+			rewards: [{
+				id: "69752EB2A03EF256"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			size: 2.5d
+			subtitle: "Небесный триумф"
+			tasks: [{
+				dimension: "aether:the_aether"
+				icon: "aether:aether_portal_frame"
+				id: "1DF6118041BA78DA"
+				title: "Посетите измерение Эфир."
+				type: "dimension"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22A1E4BA57D4A830"]
+			description: ["Первое из трёх подземелий Эфира."]
+			icon: "aether:bronze_dungeon_key"
+			id: "3034FC307834E034"
+			rewards: [{
+				id: "06F31E8C6958CFE8"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "Бронзовые постройки"
+			tasks: [{
+				icon: "aether:bronze_dungeon_key"
+				id: "1C617DF386533C4E"
+				structure: "aether:bronze_dungeon"
+				type: "structure"
+			}]
+			title: "Найдите Бронзовое подземелье"
+			x: -9.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["22A1E4BA57D4A830"]
+			description: ["Найдите Серебряное подземелье и убивайте валькирий, чтобы собирать медали победы."]
+			id: "4569AE5E16C87B01"
+			rewards: [{
+				id: "6F735ED5D0C61227"
+				type: "xp_levels"
+				xp_levels: 10
+			}]
+			subtitle: "В поисках серебра"
+			tasks: [{
+				icon: "aether:silver_dungeon_key"
+				id: "05ED261965C667E1"
+				structure: "aether:silver_dungeon"
+				type: "structure"
+			}]
+			title: "Найдите Серебряное подземелье"
+			x: -7.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["22A1E4BA57D4A830"]
+			description: ["Последнее подземелье Эфира."]
+			icon: "aether:gold_dungeon_key"
+			id: "3576D8407E23183E"
+			rewards: [{
+				id: "4D429033385504C3"
+				type: "xp_levels"
+				xp_levels: 15
+			}]
+			subtitle: "Золотая лихорадка"
+			tasks: [{
+				icon: "aether:gold_dungeon_key"
+				id: "4132DF603CE0856D"
+				structure: "aether:gold_dungeon"
+				type: "structure"
+			}]
+			title: "Найдите золотое подземелье"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3034FC307834E034"]
+			description: ["Этого босса можно найти в Бронзовом подземелье. Его необходимо победить с помощью кирок или лопат."]
+			id: "1FA1B5AF726F368E"
+			rewards: [{
+				count: 3
+				id: "5E6C4067AC05DD02"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			subtitle: "Остановить Слайдера"
+			tasks: [{
+				entity: "aether:slider"
+				icon: "aether:zanite_block"
+				id: "2883D7C1769AADD3"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Победите Слайдера"
+			x: -11.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["4569AE5E16C87B01"]
+			description: ["Собрав 10 медалей победы, вы сможете бросить вызов Королеве валькирий."]
+			id: "2E5BF8D65A759FFF"
+			rewards: [{
+				count: 3
+				id: "0FB6BEB194ED30A5"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			subtitle: "Покорение валькирий"
+			tasks: [{
+				entity: "aether:valkyrie_queen"
+				icon: {
+					Count: 1b
+					id: "aether:valkyrie_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "30FD1C28A725CE0F"
+				title: "Победите Королеву Валькирий"
+				type: "kill"
+				value: 1L
+			}]
+			x: -7.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["3576D8407E23183E"]
+			description: ["Дух Солнца обитает в Золотом подземелье. Как только он будет повержен, Эфир больше не будет находиться в состоянии вечного дня."]
+			icon: {
+				Count: 1b
+				id: "aether:phoenix_helmet"
+				tag: {
+					Damage: 0
+					affix_data: {
+						affixes: {
+							"apotheosis:socket": 0.0f
+						}
+					}
+				}
+			}
+			id: "2DD7B0278EACD633"
+			rewards: [
+				{
+					id: "38E03D5BD615845B"
+					item: {
+						Count: 1b
+						id: "apotheosis:gem"
+						tag: {
+							gem: "apotheotic_additions:aether/aether"
+							rarity: "mythic"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5B5D38BB902956EE"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Гасим свет!"
+			tasks: [{
+				entity: "aether:sun_spirit"
+				icon: {
+					Count: 1b
+					id: "aether:phoenix_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "50368C47A694BAB9"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Духа Солнца"
+			x: -8.5d
+			y: -2.0d
+		}
+		{
+			description: ["Рюкзак — это предмет, который вмещает в себя другие вещи и может носиться игроком с собой. Он имеет множество полезных улучшений, а его вместимость можно расширять от стандартного до незеритового тира для получения ещё большего объёма хранилища."]
+			id: "5F2456E5BF06098C"
+			rewards: [
+				{
+					count: 5
+					id: "4BA149495D089934"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					id: "748BD455AD98A1BC"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Делаем рюкзак"
+			tasks: [{
+				id: "3B19FE1D857D188C"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			title: "Сделайте рюкзак"
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["5F2456E5BF06098C"]
+			description: ["Это функциональное улучшение позволяет игроку хранить несколько стаков предметов в одном слоте. Его можно улучшать, увеличивая лимит от 2 до 16 стаков в ячейке."]
+			id: "39ADA7B5ED04F4C1"
+			rewards: [
+				{
+					id: "144CC89DFC1C3EAD"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "34B998A0E264C9E8"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Стакаем стаки"
+			tasks: [{
+				id: "4C4EBC476A9B33EC"
+				item: "sophisticatedbackpacks:stack_upgrade_tier_1"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5F2456E5BF06098C"]
+			description: ["Это функциональное улучшение делает рюкзак неразрушимым."]
+			id: "22388F2D91480E82"
+			rewards: [
+				{
+					id: "28322D82F1634C02"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "281705D1A032A28E"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Вечный инструмент"
+			tasks: [{
+				id: "34F23C90155A80AD"
+				item: "sophisticatedbackpacks:everlasting_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["5F2456E5BF06098C"]
+			description: ["Это функциональное улучшение позволяет переплавлять ресурсы прямо внутри рюкзака. Эту функцию можно улучшать и дальше."]
+			id: "1972EE649FC972E7"
+			rewards: [
+				{
+					id: "4D2DAB2E7DC2393C"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "41AF9CD7281456CB"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Карманная печь"
+			tasks: [{
+				id: "2ECD2DB6F9E6EAB9"
+				item: "sophisticatedbackpacks:smelting_upgrade"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -9.0d
+		}
+		{
+			dependencies: ["5F2456E5BF06098C"]
+			description: ["Это функциональное улучшение позволяет заниматься крафтом прямо внутри рюкзака."]
+			id: "2DCCC1E1567DE875"
+			rewards: [
+				{
+					id: "2D9823FA000A3F8A"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "528BC2F06CD906EE"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Крафт на ходу"
+			tasks: [{
+				id: "0A69E6F0375E6E2E"
+				item: "sophisticatedbackpacks:crafting_upgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5F2456E5BF06098C"]
+			description: ["Это функциональное улучшение позволяет рюкзаку автоматически кормить игрока едой из его инвентаря."]
+			id: "513C6A72927972C9"
+			rewards: [
+				{
+					id: "25A2D7EE689C46A7"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					id: "267CF3800F8624B1"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			subtitle: "Обед по расписанию"
+			tasks: [{
+				id: "6D7A69C94817EA30"
+				item: "sophisticatedbackpacks:feeding_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -9.0d
+		}
+		{
+			description: ["Печи можно улучшать, объединяя их с редкими металлами."]
+			id: "4FAECF44CFBE7EEC"
+			rewards: [
+				{
+					id: "3FAF6DAE1907C846"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "165DC07AAB6BB184"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Железная печь"
+			tasks: [{
+				id: "477CC12BCAEC1CE0"
+				item: "ironfurnaces:iron_furnace"
+				type: "item"
+			}]
+			title: "Создайте железную печь"
+			x: 2.5d
+			y: -8.0d
+		}
+		{
+			dependencies: ["4FAECF44CFBE7EEC"]
+			description: ["Золотая печь может похвастаться более высокой скоростью плавки, чем железная, и её можно улучшать и дальше."]
+			id: "02D166E4FFB3BAF6"
+			rewards: [
+				{
+					id: "4D3BDB80F753ED6A"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "4D826499BB4A2E54"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			subtitle: "Золотая печь"
+			tasks: [{
+				id: "671ADDE155797B6D"
+				item: "ironfurnaces:gold_furnace"
+				type: "item"
+			}]
+			title: "Создайте золотую печь"
+			x: 4.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"Защищает игроков от дождя и солнечного света — а это как раз то, что нужно Огнерожденным, Эндерианцам и Фантомам."
+				""
+				"Чтобы предмет работал, его нужно держать в руке. Под дождём он постепенно теряет прочность, но не ломается полностью."
+				""
+				"Прочность постепенно восстанавливается в обычную погоду, а жаркая среда может ускорить этот процесс. Чтобы зонт защищал от солнечного света, его необходимо перекрасить в достаточно тёмный цвет — при этом прочность тратиться не будет."
+			]
+			id: "2C13C95283B0545E"
+			rewards: [{
+				count: 2
+				id: "47A07B7878F0CC43"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			size: 2.5d
+			subtitle: "Спасительная тень"
+			tasks: [{
+				id: "7DEEA7B9CB09A9FC"
+				item: "oriacs:umbrella"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"При погружении под воду водолазный шлем обеспечивает водное дыхание сухопутным расам, но постепенно наполняется водой, превращаясь в шлем для суши."
+				""
+				"Чары «Дыхание» замедляют процесс затопления шлема."
+			]
+			id: "4A6D205328E2B1A6"
+			rewards: [{
+				count: 2
+				id: "453EA3543AF6922E"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			size: 2.5d
+			subtitle: "Погружение в глубины"
+			tasks: [{
+				id: "07D37621CF366513"
+				item: {
+					Count: 1b
+					id: "oriacs:diving_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 13.75d
+			y: -1.25d
+		}
+		{
+			description: [
+				"На суше шлем для суши обеспечивает водное дыхание водным расам, но постепенно теряет воду, превращаясь в водолазный шлем."
+				""
+				"Чары «Дыхание» замедляют процесс испарения воды."
+			]
+			id: "5926F8DC412EB475"
+			rewards: [{
+				count: 2
+				id: "7C35FCD069724B20"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			size: 2.5d
+			subtitle: "Рыба на суше"
+			tasks: [{
+				id: "13338F1870262703"
+				item: {
+					Count: 1b
+					id: "oriacs:landwalking_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 11.0d
+			y: 1.0d
+		}
+		{
+			description: ["Строительные жезлы позволяют возводить огромные сооружения быстро и эффективно."]
+			id: "736E4B5E45E37F9C"
+			rewards: [{
+				id: "0955D642CDC82F54"
+				item: "cisco_mod:champion_coin"
+				type: "item"
+			}]
+			subtitle: "Создаем строительный жезл"
+			tasks: [{
+				id: "358C4E56610824E4"
+				item: {
+					Count: 1b
+					id: "constructionwand:stone_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			title: "Каменный жезл"
+			x: 2.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["736E4B5E45E37F9C"]
+			description: [
+				"Строительные жезлы можно улучшать от каменного тира до бесконечного."
+				""
+				"Вы также можете объединять посохи с сердцевинами, чтобы расширить их функционал."
+			]
+			id: "4524817476A2B36D"
+			rewards: [
+				{
+					id: "3D24FD89F2EA55AA"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "34CA5597695E7215"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Улучшаем жезл"
+			tasks: [{
+				id: "0DD6A322508BF924"
+				item: {
+					Count: 1b
+					id: "constructionwand:iron_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: -6.5d
+		}
+		{
+			description: [
+				"Вы можете поместить &2жителя &fс профессией в &bавто-торговца &fи выбрать предметы, которыми хотите торговать."
+				""
+				"После этого &bавто-торговец &fавтоматизирует эту сделку."
+			]
+			id: "5E30054F5210D394"
+			rewards: [
+				{
+					count: 2
+					id: "0FB416B51F6C9287"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "161BED42089DC650"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простая авто-торговля"
+			tasks: [{
+				id: "58C0366707E4D09C"
+				item: "easy_villagers:auto_trader"
+				type: "item"
+			}]
+			title: "Авто-торговец из Easy Villagers"
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			description: ["Вы можете поместить &2жителя &fс профессией в &bторговца&f, чтобы получить быстрый доступ к его сделкам в любое удобное время."]
+			id: "2D15560C7952AFF6"
+			rewards: [
+				{
+					count: 2
+					id: "01FCDA78E0876721"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "2C13F619CBE9FD86"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простая торговля"
+			tasks: [{
+				id: "5C82783AAEB97388"
+				item: "easy_villagers:trader"
+				type: "item"
+			}]
+			title: "Торговля в Easy Villagers"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			description: ["Вы можете поместить &2жителя &fв &bжелезную ферму&f, чтобы начать автоматический сбор &8железа."]
+			id: "2FF19466E4710C4D"
+			rewards: [
+				{
+					count: 2
+					id: "71F5E00E8C25EC5C"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "0D2070DDCA0F0CEE"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простой фарм железа"
+			tasks: [{
+				id: "103146876CB0193D"
+				item: "easy_villagers:iron_farm"
+				type: "item"
+			}]
+			title: "Ферма железа в Easy Villagers"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			description: ["Вы можете поместить &aжителя&f-фермера и семена в &bфермера&f, чтобы автоматизировать выращивание сельскохозяйственных культур."]
+			id: "514E2CB906303E01"
+			rewards: [
+				{
+					count: 2
+					id: "717AD01ACED34156"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "696676945DCF80C1"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простая ферма"
+			tasks: [{
+				id: "632E67F6EA257FB6"
+				item: "easy_villagers:farmer"
+				type: "item"
+			}]
+			title: "Ферма в Easy Villagers"
+			x: 7.0d
+			y: 7.0d
+		}
+		{
+			description: [
+				"&bПреобразователь &fавтоматически превращает &aжителей &fв &cзомби-жителей&f, а затем исцеляет их обратно в обычных &aжителей&f."
+				""
+				"Этот процесс снижает цены на их сделки и требует от вас вставить &2жителя&f, золотое яблоко и любое зелье слабости."
+			]
+			id: "2EC1BD31A2A70282"
+			rewards: [
+				{
+					count: 2
+					id: "641C9EB6CDDD9CB2"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "6974A6DCBB2C11D9"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простое преобразование"
+			tasks: [{
+				id: "5B52532FCCF781DB"
+				item: "easy_villagers:converter"
+				type: "item"
+			}]
+			title: "Преобразование в Easy Villagers"
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			description: ["&bИнкубатор &fтребует от вас поместить внутрь двух &aжителей &fи еду, чтобы затем производить маленьких &aжителей&f."]
+			id: "61164317E99BF787"
+			rewards: [
+				{
+					count: 2
+					id: "61253F0C400D0AEA"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "71CB39FDF00D7A98"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Простая инкубация"
+			tasks: [{
+				id: "6988B02FF21C284A"
+				item: "easy_villagers:breeder"
+				type: "item"
+			}]
+			title: "Инкубация в Easy Villagers"
+			x: 8.5d
+			y: 5.5d
+		}
+		{
+			description: ["&bУскоритель роста &fувеличивает скорость взросления маленьких &aжителей&f."]
+			id: "0342DBA7699AE3D0"
+			rewards: [
+				{
+					count: 2
+					id: "74376288ED11BAC7"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "324DAD48DAB977B6"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			subtitle: "Ускорение инкубации"
+			tasks: [{
+				id: "0FD635AF46C49044"
+				item: "easy_villagers:incubator"
+				type: "item"
+			}]
+			title: "Ускорение инкубации в Easy Villagers"
+			x: 8.5d
+			y: 4.0d
+		}
+	]
+	title: "{\"text\":\"Путь странника\",\"color\":\"dark_green\",\"bold\":false,\"underlined\":false}"
+}

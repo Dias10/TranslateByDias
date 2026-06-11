@@ -1,0 +1,1030 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "diamond"
+	filename: "ciscos_dread_knight"
+	group: "3B0CDB8395E59365"
+	icon: "apotheosis:mythic_material"
+	id: "2E1FB48E562F5408"
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"2879C3284A204B6E"
+				"284CC876C5BF4841"
+				"37BECEA9F6F83A3D"
+				"5C65E6DBA9948523"
+				"712F03F19DE662F9"
+				"021E592772515E8C"
+				"4DF63948665C18B3"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"&9Затонувший город&f можно найти с помощью &5ока бездны&f, а Левиафан пробудится, как только на его алтарь будет принесена &dбездонная жертва&f."
+			]
+			icon: "cataclysm:the_baby_leviathan_bucket"
+			id: "5EA56D4E49943492"
+			rewards: [
+				{
+					id: "46DE2D512A0A2B97"
+					type: "xp"
+					xp: 50
+				}
+				{
+					count: 13
+					id: "26E039A1D41E89D6"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Террор бездны"
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				icon: "cataclysm:the_baby_leviathan_bucket"
+				id: "51F29EA99BAE4EDA"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Левиафана"
+			x: 15.0d
+			y: -31.5d
+		}
+		{
+			dependencies: [
+				"6EEDFAA5ECCD6D69"
+				"55FC85A0AAE7B542"
+				"1C30C21B739D5F98"
+				"7A17144A30D85646"
+				"33D9D6496A8344B6"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"Используйте око чудовища, чтобы отыскать его логово в &cАду&f."
+			]
+			icon: "cataclysm:monstrous_eye"
+			id: "468FD1BC76CAA38A"
+			rewards: [
+				{
+					id: "1CED7192561576B9"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 7
+					id: "45E10A34D5716745"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Нейтрализация незерита"
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				icon: "cataclysm:monstrous_eye"
+				id: "3C0D5B33E8C56070"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте незеритовое чудовище"
+			x: 18.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                        &6Тир 2"
+				""
+				"Можно призвать рядом с &9водой&f с помощью &cракушки-горна&f, находясь в биоме &bЛедяной лабиринт&f."
+			]
+			icon: {
+				Count: 1b
+				id: "aquamirae:three_bolt_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "43DFF70CCC78EE26"
+			rewards: [
+				{
+					id: "3A883A309904F0CB"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 7
+					id: "4D650F3E5630A405"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Последнее плавание"
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1b
+					id: "aquamirae:three_bolt_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "0741AA9A59FE37C7"
+				title: "Убейте Капитана Корнелию"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте призрак Капитана Корнелии"
+			x: 15.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"2879C3284A204B6E"
+				"021E592772515E8C"
+				"5C65E6DBA9948523"
+				"712F03F19DE662F9"
+				"284CC876C5BF4841"
+				"4DF63948665C18B3"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"Призывается путём сбрасывания &9загадочного червя&f в &5пустоту&f на &dвнешних островах Энда&f."
+			]
+			icon: "alexsmobs:mysterious_worm"
+			id: "6E20A83067679C38"
+			rewards: [
+				{
+					id: "222844A9E1D5A6F6"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+				{
+					count: 13
+					id: "421606BF3AEB4956"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Демон рожденный в пустоте"
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: "alexsmobs:mysterious_worm"
+				id: "1E6898419E753BE7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте пустотного червя"
+			x: 21.0d
+			y: -31.5d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"Используйте &cоко механоида&f, чтобы отыскать его структуру, а затем пробудите его с помощью &dзвезды Ада&f."
+			]
+			icon: "cataclysm:mech_eye"
+			id: "37BECEA9F6F83A3D"
+			rewards: [
+				{
+					id: "51D8C64A28EA53D1"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 11
+					id: "55CB4B8E75F26E3F"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Древний предвестник"
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				icon: "cataclysm:mech_eye"
+				id: "32D52FDBAB3FBCC5"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте древнего предвестника"
+			x: 18.0d
+			y: -25.5d
+		}
+		{
+			dependencies: ["0E673FBC14FEDA40"]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"Можно найти в &3тёмных&0 глубинах&f."
+			]
+			icon: "minecraft:sculk_shrieker"
+			id: "7D57DE098B9C58D2"
+			rewards: [
+				{
+					id: "20E12C24C2240B3E"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+				{
+					count: 9
+					id: "2A6E3F82B2BA8872"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Проклятие стража"
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:sculk_shrieker"
+				id: "5E7701C4336A2D29"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Вардена"
+			x: 18.0d
+			y: -18.0d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                    &4Тир 3"
+				""
+				"Эта усиленная версия &cбагрового комара&f создаётся, когда &cбагровый комар&f сосёт кровь &9мунгуса&f, покрытого &1искажёнными грибками&f, находясь в &aобычном мире&f."
+			]
+			icon: "alexsmobs:mosquito_larva"
+			id: "284CC876C5BF4841"
+			rewards: [
+				{
+					id: "6A855E3D0F7C0B21"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 9
+					id: "40B342FADB65A85A"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Высший паразит"
+			tasks: [{
+				entity: "alexsmobs:warped_mosco"
+				icon: "alexsmobs:mosquito_larva"
+				id: "0C5434FB9A4EEB39"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте комара"
+			x: 21.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+			"                    &6Тир 2"
+			""
+			"Можно найти в подземелье внутри измерения &5Яркой зари&d."
+			]
+			icon: "minecraft:cobweb"
+			id: "33355CF6FE34D418"
+			rewards: [
+				{
+					id: "28A7C6CA4B25CBAC"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 7
+					id: "6C1FEC113F923B4D"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Дезинсекция"
+			tasks: [{
+				entity: "blue_skies:arachnarch"
+				icon: "blue_skies:spider_webbing"
+				id: "6B64403DBD28CCC2"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Арахнофобия"
+			x: 21.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                    &6Тир 2"
+				""
+				"Можно найти в &aприродном подземелье&f внутри измерения &eВечного сияния&d."
+			]
+			id: "5C4C5ED10BEFCB22"
+			rewards: [
+				{
+					id: "2DCC245B99D26175"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 7
+					id: "246859FFA90645AB"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Удар по звёздам"
+			tasks: [{
+				entity: "blue_skies:starlit_crusher"
+				icon: "blue_skies:starlit_sapling"
+				id: "66EAB0D95AB09ABA"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте звездного разрушителя"
+			x: 18.0d
+			y: -10.5d
+		}
+		{
+			description: [
+				"                    &aТир 1"
+				""
+				"Победите &5Розалину, Клинок заката&f. Призывается с помощью &dключа заката&f."
+			]
+			icon: {
+				Count: 1b
+				id: "meetyourfight:twilights_thorn"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7A17144A30D85646"
+			rewards: [
+				{
+					id: "44149861F96DF866"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+				{
+					count: 5
+					id: "0253F233E0B2B31A"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Клинок заката"
+			tasks: [{
+				entity: "meetyourfight:rosalyne"
+				icon: {
+					Count: 1b
+					id: "meetyourfight:twilights_thorn"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "75B439A424F585F7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Розалину"
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"                    &aТир 1"
+				""
+				"Победите &eГоспожу Удачу&f. Призывается с помощью &cАванса дьявола&f."
+			]
+			id: "6EEDFAA5ECCD6D69"
+			rewards: [
+				{
+					id: "35C7FB27550E2AB9"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 5
+					id: "3BF899CF30C141ED"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Госпожа удача"
+			tasks: [{
+				entity: "meetyourfight:dame_fortuna"
+				icon: "meetyourfight:devils_ante"
+				id: "0EDA2162C28F3BBF"
+				title: "Убейте колесо фортуны"
+				type: "kill"
+				value: 1L
+			}]
+			x: 18.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"                    &aТир 1 "
+				""
+				"Победите &6Древнего Болотопаста&f. Призывается с помощью &cископаемой приманки&f."
+			]
+			id: "55FC85A0AAE7B542"
+			rewards: [
+				{
+					id: "781353C0DD1C2990"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 5
+					id: "01B93821E739088D"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Сокрушение глубин"
+			tasks: [{
+				entity: "meetyourfight:swampjaw"
+				icon: "meetyourfight:fossil_bait"
+				id: "3C0592059CDAF0AE"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Болотопаста"
+			x: 12.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"                    &aТир 1"
+				""
+				"Сразите таинственного &eЗвонаря&f. Призывается с помощью &dпроклятого колокола&f."
+			]
+			id: "1C30C21B739D5F98"
+			rewards: [
+				{
+					id: "7C8AD8EF3BD7F77C"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 5
+					id: "61A9BFAF527B86F2"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Звонарь"
+			tasks: [{
+				entity: "meetyourfight:bellringer"
+				icon: "meetyourfight:haunted_bell"
+				id: "02E30AD0558F717C"
+				title: "Slay The Bellringer"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Победите Звонаря"
+			x: 15.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                    &6Тир 2"
+				""
+				"Логово &5Короля Мертвецов&f можно найти, создав и следуя за &2сбившимся компасом&f."
+			]
+			id: "368E9A4D5A17F2E4"
+			rewards: [
+				{
+					id: "0656CBE2E0E77758"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 7
+					id: "43D2518EEB20646C"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Убить мертвеца"
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					Count: 1b
+					id: "twilightforest:skeleton_skull_candle"
+					tag: {
+						BlockEntityTag: {
+							CandleAmount: 1
+							CandleColor: 0
+						}
+					}
+				}
+				id: "3EFD597DED393B73"
+				title: "Убейте Короля Мертвецов"
+				type: "kill"
+				value: 1L
+			}]
+			x: 12.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                    &4Тир 3"
+				""
+				"&9Ночного Лича&f можно найти в редких башнях в &bхолодных&f биомах. Ищите башни, следуя за &1звёздами душ&f."
+			]
+			icon: "bosses_of_mass_destruction:soul_star"
+			id: "2879C3284A204B6E"
+			rewards: [
+				{
+					id: "2CDED70E76ED0D3B"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 9
+					id: "36CDE3AC014A995C"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Проблемы мёртвых"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:lich"
+				icon: "bosses_of_mass_destruction:soul_star"
+				id: "0ADDD210111FECE0"
+				title: "Slay the Night Lich"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Победите ночного Лича"
+			x: 12.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                    &4Тир 3"
+				""
+				"&5Обсидилита&f можно найти в редких структурах на &dостровах Края&f."
+			]
+			id: "712F03F19DE662F9"
+			rewards: [
+				{
+					id: "0B4712EC2019412F"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 9
+					id: "01F2497CCEE82E4E"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Обсидиановое крошево"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:obsidilith"
+				icon: "bosses_of_mass_destruction:obsidian_heart"
+				id: "6A378DAEF8095B42"
+				title: "Убейте Обсидилита"
+				type: "kill"
+				value: 1L
+			}]
+			x: 24.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                    &4Тир 3"
+				""
+				"&4Адскую перчатку&f можно найти в редких структурах в &cАду&f."
+			]
+			id: "5C65E6DBA9948523"
+			rewards: [
+				{
+					id: "05DE2524D89C2C22"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 9
+					id: "66E6CA80382015D4"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Нейтрализация Адской перчатки"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:gauntlet"
+				icon: "bosses_of_mass_destruction:blazing_eye"
+				id: "30A5BD0C701BA72C"
+				title: "Убейте Адскую перчатку"
+				type: "kill"
+				value: 1L
+			}]
+			x: 15.0d
+			y: -22.5d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                    &6Тир 2"
+				""
+				"&5Пусто&2цвет&f можно найти в редких пещерах на самом дне мира. &5Пустотные &aлилии&f укажут путь."
+			]
+			icon: "bosses_of_mass_destruction:crystal_fruit"
+			id: "11AE539045CFF66D"
+			rewards: [
+				{
+					id: "02BD601F202C6875"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 7
+					id: "633DB7F0608F55A4"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Сорванный бутон"
+			tasks: [{
+				entity: "bosses_of_mass_destruction:void_blossom"
+				icon: "bosses_of_mass_destruction:crystal_fruit"
+				id: "36B6461588426550"
+				title: "Убейте Пустоцвет"
+				type: "kill"
+				value: 1L
+			}]
+			x: 24.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			dependency_requirement: "all_started"
+			description: [
+				"                  &dПривратник"
+				""
+				"Этот &cдоисторический &eкороль&f песков обитает в структуре, похожей на пирамиду, посреди &eпустыни&f."
+				""
+				"Его яйцо призыва и материал для пробуждения также можно найти в магазине &eтоваров Cisco&f."
+			]
+			icon: "cataclysm:remnant_skull"
+			id: "4DF63948665C18B3"
+			rewards: [
+				{
+					count: 11
+					id: "220747B100E0C8FB"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "343CEF34CCB4A910"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+			]
+			size: 3.0d
+			subtitle: "Пески и дюны"
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				icon: "cataclysm:remnant_skull"
+				id: "140995D9701FEEA7"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Древнего"
+			x: 18.0d
+			y: -28.5d
+		}
+		{
+			description: [
+				"                    &aТир 1"
+				""
+				"&1Ненасытного&f можно призвать, убивая животных у рек и других крупных водоёмов."
+				""
+				"Его яйцо призыва также можно приобрести в магазине товаров Cisco."
+			]
+			id: "33D9D6496A8344B6"
+			rewards: [
+				{
+					count: 5
+					id: "0BCC03D43C66D12D"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "7CCA12A57915047C"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			size: 3.0d
+			subtitle: "Последняя трапеза"
+			tasks: [{
+				entity: "iter_rpg:insatiable"
+				icon: {
+					Count: 1b
+					id: "iter_rpg:water_armor_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "3001DBA182272F59"
+				title: "Убейте Ненасытного"
+				type: "kill"
+				value: 1L
+			}]
+			x: 21.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                    &4Тир 3"
+				""
+				"&5Запечатанную Скорбь&f можно найти внутри Шпиля Скорби где-то в Аду."
+			]
+			icon: "iter_rpg:crystal_tear"
+			id: "021E592772515E8C"
+			rewards: [
+				{
+					count: 9
+					id: "07B361EEF9493975"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "6442998F719C17B3"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+			]
+			size: 3.0d
+			subtitle: "Убийца Скорби"
+			tasks: [{
+				entity: "iter_rpg:sorrowsealed"
+				icon: "iter_rpg:hollow_visage"
+				id: "787946C125F4A5AE"
+				title: "Убейте Запечатанную Скорбь"
+				type: "kill"
+				value: 1L
+			}]
+			x: 18.0d
+			y: -22.5d
+		}
+		{
+			description: [
+				"&aТир 1 &f: Минимальный уровень: 25. Случайный бонус к уровню: 1–10. Уровень не увеличивается от расстояния."
+				""
+				"&6Тир 2 &f: Минимальный уровень: 50. Случайный бонус к уровню: 1–15. Небольшое увеличение уровня от расстояния."
+				""
+				"&4Тир 3 &f: Минимальный уровень: 85. Случайный бонус к уровню: 1–20. Умеренное увеличение уровня от расстояния."
+				""
+				"&dСтражи Врат &f: Всегда адские. Появляются с уровнем чуть выше, чем тир, который они охраняют. Должны быть побеждены для перехода на следующий тир."
+			]
+			id: "678A7FE4D87993D3"
+			rewards: [{
+				id: "606873147DCE9491"
+				item: "skilltree:wisdom_scroll"
+				type: "item"
+			}]
+			shape: "circle"
+			size: 4.0d
+			subtitle: "Guide"
+			tasks: [{
+				id: "63E55BDCFA000833"
+				title: "Нажмите чтобы выполнить."
+				type: "checkmark"
+			}]
+			title: "Тиры"
+			x: 4.0d
+			y: -16.0d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                     &6Тир 2"
+				""
+				"Создатель абавутана, &eУмвути&f, обитает в своём логове посреди биома &6саванны&f."
+			]
+			id: "3109450AC20BB4CF"
+			rewards: [
+				{
+					id: "06FCD5014735736E"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 7
+					id: "4C7197F69CE4C9C6"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Дитя Солнца"
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				icon: {
+					Count: 1b
+					id: "mowziesmobs:sol_visage"
+					tag: {
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "315F341CF42CFB53"
+				title: "Убейте Умвути"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Умвути"
+			x: 9.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["468FD1BC76CAA38A"]
+			description: [
+				"                      &6Тир 2"
+				""
+				"Этого опасного зверя можно изредка встретить в &bснеженных&f землях."
+			]
+			id: "0F73EE0DAB5E37FD"
+			rewards: [
+				{
+					id: "7DE0EE16F5A37B50"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+				{
+					count: 7
+					id: "5B929CD8203A288C"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Зверь зимы"
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				icon: {
+					Count: 1b
+					id: "mowziesmobs:ice_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "67E799E39F4C0365"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Убейте Ледоглота"
+			x: 27.0d
+			y: -10.5d
+		}
+		{
+			dependencies: [
+				"3109450AC20BB4CF"
+				"43DFF70CCC78EE26"
+				"368E9A4D5A17F2E4"
+				"33355CF6FE34D418"
+				"5C4C5ED10BEFCB22"
+				"0F73EE0DAB5E37FD"
+				"11AE539045CFF66D"
+			]
+			dependency_requirement: "all_started"
+			description: [
+				"                    &dПривратник"
+				""
+				"&0Стального Кователя&f можно найти внутри структуры &7под землёй&f."
+			]
+			id: "0E673FBC14FEDA40"
+			rewards: [
+				{
+					id: "4113927B722E3C01"
+					type: "xp_levels"
+					xp_levels: 25
+				}
+				{
+					count: 9
+					id: "1B12927A776D3BFB"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+			]
+			size: 3.0d
+			subtitle: "Страж рожденный из стали"
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: {
+					Count: 1b
+					id: "mowziesmobs:wrought_helmet"
+					tag: {
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "2AC88C168A7CC669"
+				title: "Убейте стального кователя"
+				type: "kill"
+				value: 1L
+			}]
+			x: 18.0d
+			y: -15.0d
+		}
+		{
+			dependencies: ["7D57DE098B9C58D2"]
+			description: [
+				"                  &dПривратник"
+				""
+				"Эта тёмная сущность обитает в &bморозной &8тюрьме&f, которую можно отыскать под землёй или с помощью &aока проклятия&f."
+			]
+			id: "51AE1E2D5ED26F57"
+			rewards: [
+				{
+					count: 11
+					id: "59EAC35D821F42EB"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					id: "11ECCF8C937D7F42"
+					type: "xp_levels"
+					xp_levels: 35
+				}
+			]
+			size: 3.0d
+			subtitle: "Мрачные деяния"
+			tasks: [{
+				entity: "cataclysm:maledictus"
+				icon: {
+					Count: 1b
+					id: "cataclysm:cursium_helmet"
+					tag: {
+						Damage: 0
+						affix_data: {
+							affixes: {
+								"apotheosis:socket": 0.0f
+							}
+						}
+					}
+				}
+				id: "098BDACE01ACBD24"
+				title: "Уничтожьте Проклятого"
+				type: "kill"
+				value: 1L
+			}]
+			x: 18.0d
+			y: -31.5d
+		}
+	]
+	title: "{\"text\":\"Убийца Богов\",\"color\":\"gold\",\"bold\":false,\"underlined\":false}"
+}

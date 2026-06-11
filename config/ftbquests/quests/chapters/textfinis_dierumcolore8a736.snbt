@@ -1,0 +1,396 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "textfinis_dierumcolore8a736"
+	group: "6D7A192B0CC378A4"
+	icon: {
+		Count: 1b
+		id: "cisco_mod:absolute_equillibrium"
+		tag: {
+			Damage: 0
+			affix_data: {
+				affixes: {
+					"apotheosis:socket": 0.0f
+				}
+			}
+		}
+	}
+	id: "311E2D41844A4BEA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: true
+			description: ["Обменяй свои &6сияющие солнечные осколки &fна &eбезупречные &1самоцветы&f."]
+			id: "57F4F47A0E411EB9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "499D09C64D542015"
+				table_id: 436462268599988983L
+				type: "choice"
+			}]
+			subtitle: "Обмен"
+			tasks: [{
+				consume_items: true
+				id: "7FF35FA022696D3C"
+				item: "cisco_mod:radiant_sunshard"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: ["Открой &dврата памяти&f, чтобы сразиться с &cусиленными &fверсиями &6Cisco &fи &4Падшего короля&f, и получить &eмонеты чемпиона &fи &6скрижали вознесения&f."]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:cisco_ultra_gate"
+				}
+			}
+			id: "4117F0B665E3CA2D"
+			rewards: [
+				{
+					id: "390CB681D7AEB1D1"
+					item: "cisco_mod:divine_core"
+					type: "item"
+				}
+				{
+					id: "71F73C496349C87F"
+					item: "cisco_mod:divine_core"
+					type: "item"
+				}
+			]
+			subtitle: "Врата воспоминаний"
+			tasks: [
+				{
+					id: "60DADA22FA0C285F"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:cisco_ultra_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "61384F21EA25B25A"
+					item: "cisco_mod:tabletof_ascension"
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			description: ["&4Врата катаклизма &fпозволят тебе сразиться с &cусиленными &fверсиями &4боссов катаклизма&f, получая за это &6сияющие солнечные осколки&f."]
+			icon: {
+				Count: 1b
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:large_cataclysm_gate"
+				}
+			}
+			id: "4288F14E88A87640"
+			rewards: [
+				{
+					id: "2827FCCE98A9E346"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+				{
+					id: "5CAD9A6B291E0071"
+					item: "cataclysm:ignitium_ingot"
+					type: "item"
+				}
+			]
+			subtitle: "Врата катаклизма"
+			tasks: [
+				{
+					id: "08BA2A07B9C99E93"
+					item: {
+						Count: 1b
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:large_cataclysm_gate"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7772AAD89D8528AA"
+					item: "cisco_mod:radiant_sunshard"
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["238511D8E52BB53E"]
+			description: [
+				"Пришло время &aобновить&f этот &eвызов&f. &1Внимательно &fпрочитай описания каждой награды и выбери любые из них, чтобы начать своё путешествие заново."
+				""
+				"&aОткрывает &fвозможность использовать большинство &5Энигм&f."
+				""
+				"&9Лазурь &fувеличивает глобальный уровень монстров во всех измерениях на 150. &4(Будьте осторожны на серверах: если этот бонус выберут несколько игроков, эффект суммируется!)"
+				""
+				"&dФиалка &fсбрасывает главу «Deus», позволяя вам снова бросить вызов всем боссам на повышенном уровне сложности."
+				""
+				"&4Багрянец &fсбрасывает главу «Семь смертных грехов», позволяя вам повторно сразиться с боссами на повышенном уровне сложности."
+			]
+			icon: {
+				Count: 1b
+				id: "cisco_mod:ascended_hero_helmet"
+				tag: {
+					Damage: 0
+					affix_data: {
+						affixes: {
+							"apotheosis:socket": 0.0f
+						}
+					}
+				}
+			}
+			id: "3C1CDBC749329522"
+			rewards: [
+				{
+					command: "/autoleveling level add 150"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:ascended_hero_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "56FAB134FC2045F1"
+					title: "Поднимает уровень монстров во всех мирах на 150"
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @p reset 2E1FB48E562F5408"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:ascended_hero_violet_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "65B7C9A1856B5962"
+					title: "Сбросить главу грехов"
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @p reset 3B93984312100331"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:ascended_hero_rouge_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "28A470F5EE6AA58B"
+					title: "Сбрасывает главу семь смертных грехов"
+					type: "command"
+				}
+			]
+			subtitle: "Обновленный вызов"
+			tasks: [
+				{
+					advancement: "cisco_mod:regicide"
+					criterion: ""
+					id: "3CC6BF97B89DF22D"
+					title: "Требуется достижение: Цареубийца"
+					type: "advancement"
+				}
+				{
+					id: "26D9FA8E0423F0F9"
+					title: "Нажмите чтобы выполнить."
+					type: "checkmark"
+				}
+			]
+			title: "Сложность Вознесения"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3C1CDBC749329522"]
+			description: [
+				"&4Сбрось &fглаву грехов и сокруши всех боссов на повышенной сложности."
+				""
+				"&2Открывает &fвозможность использовать ещё более &cмощные &5Энигмы&f."
+				""
+				"Только для &eсамых отважных &fискателей приключений."
+			]
+			id: "10AAB70F4D035819"
+			rewards: [
+				{
+					command: "/autoleveling level add 300"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:absolute_equillibrium"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "5EF90F8D0DD4EB55"
+					title: "Поднимает уровень в мирах на 300"
+					type: "command"
+				}
+				{
+					count: 10
+					id: "2B68827CE773658D"
+					item: "cisco_mod:champion_coin"
+					type: "item"
+				}
+				{
+					command: "/ftbquests change_progress @p reset 2E1FB48E562F5408"
+					icon: "minecraft:writable_book"
+					id: "7EBB838C61DC8E17"
+					title: "Сбросьте главу семи смертных грехов"
+					type: "command"
+				}
+			]
+			subtitle: "Божественный вызов"
+			tasks: [
+				{
+					id: "2641BEB0376682DB"
+					item: {
+						Count: 1b
+						id: "cisco_mod:absolute_equillibrium"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F80886E60B457D5"
+					title: "Нажмите чтобы выполнить."
+					type: "checkmark"
+				}
+			]
+			title: "Божественная сложность"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["10AAB70F4D035819"]
+			description: [
+				"Подними уровень мира на 500 и сбрось главу грехов, чтобы бросить вызов боссам ещё раз. Из монстров уровня &d400–750 &fбудут выпадать более редкие материалы, такие как &bпыль самоцветов &fи &9сигилы слотов&f."
+				""
+				"В то же время из монстров выше &d750 &fуровня будут выпадать очень ценные предметы, такие как &6горящий пепел &fи &eмонеты чемпиона&f."
+				""
+				"&aОткрывает &fвозможность использовать самые &4мощные &5Энигмы&f."
+			]
+			icon: {
+				Count: 1b
+				id: "cisco_mod:bjorn_helmet"
+				tag: {
+					Damage: 0
+					affix_data: {
+						affixes: {
+							"apotheosis:socket": 0.0f
+						}
+					}
+				}
+			}
+			id: "64914C7972F93909"
+			rewards: [
+				{
+					command: "/autoleveling level add 500"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:sylvi_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "0796735DCE56B515"
+					title: "Поднимает уровень во всех мирах на 500"
+					type: "command"
+				}
+				{
+					command: "/ftbquests change_progress @p reset 2E1FB48E562F5408"
+					icon: {
+						Count: 1b
+						id: "cisco_mod:bjorn_helmet"
+						tag: {
+							Damage: 0
+							affix_data: {
+								affixes: {
+									"apotheosis:socket": 0.0f
+								}
+							}
+						}
+					}
+					id: "6246CE0BB0E2F0D1"
+					title: "Сбросьте главу грехов"
+					type: "command"
+				}
+			]
+			subtitle: "Сложность Хелхейм"
+			tasks: [{
+				id: "003F11D8E5234967"
+				title: "Нажмите чтобы выполнить."
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			can_repeat: true
+			description: [
+				"&6Эта корона &fизначально была создана &eВершителями Закона &fкак орудие наказания для непокорных &6богов&f. Она жестоко вырывала все приятные воспоминания из разума жертвы, а затем испепеляла её вспышкой пурпурного пламени. Как несложно представить, долгое воздействие этого устройства способно сломить даже самый непреклонный разум."
+				""
+				"Впрочем, некоторые боги-мазохисты умудрялись получать от этого извращённое удовольствие, а позже и вовсе воссоздали это устройство для собственных утех."
+			]
+			icon: "cisco_mod:crown_of_debilitating_desire"
+			id: "7E2618F2B06D7339"
+			rewards: [{
+				id: "6A19F8152B2EBB8D"
+				item: "cisco_mod:crown_of_debilitating_desire"
+				type: "item"
+			}]
+			subtitle: "Погружение в безумие"
+			tasks: [{
+				id: "753B0A81E6BA8B11"
+				title: "Нажмите чтобы выполнить."
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: -3.0d
+		}
+	]
+	title: "{\"text\":\"Закат времен\",\"color\":\"#E8A736\"}"
+}
